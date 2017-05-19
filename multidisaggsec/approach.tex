@@ -1,6 +1,6 @@
 \section{Recursive Multivariate Piecewise Motif Mining}
 To solve the problem of separating a multi-dimensional time series into several time series, 
-I propose the approach of recursive multivariate piecewise motif mining. 
+We propose the approach of recursive multivariate piecewise motif mining. 
 Motif mining has been well studied in previous work \cite{motif1} and \cite{motif2}. 
 Multivariate or multidimensional motif mining is further extended in \cite{minnen2007improving} and \cite{tanaka2005discovery} and \cite{motifgoal}. 
 
@@ -9,12 +9,12 @@ in which discrete on/off events are exploited.
 This research enhances previous work by piecewise motif mining, 
 where the on/off event is comprised of several consecutive data points, 
 i.e. piecewise, other than individual discrete one.
-Also, I use multivariate motif mining to make full use of two- or three-phase aggregated data. 
+Also, we use multivariate motif mining to make full use of two- or three-phase aggregated data. 
 
 The framework of recursive multivariate piecewise motif mining to energy disaggregation is illustrated in Figure \ref{fig_multivariateMotifming}. 
 The input includes multiple-phase aggregated data, such as two-phase data Mains1 and Mains2, 
 and the power levels of each device. 
-During the whole procedure, I recursively apply piecewise motif mining to two-phases and single phase diffs data.
+During the whole procedure, we recursively apply piecewise motif mining to two-phases and single phase diffs data.
 The first step is to identify electrical devices which draw power from both phases.
 Generally these devices consume a large amount of power, such as the water heater indicated by the blue line.
 These devices draw equal power or disparate power from both phases synchronously. 
@@ -23,7 +23,7 @@ These devices draw equal power or disparate power from both phases synchronously
 %we discover the same power changes during the on/off events. 
 %With multivariate motif mining, 
 %we can identify these large power consumption devices. 
-Secondly, I remove the power consumption of the devices which draw power from both phases.
+Secondly, we remove the power consumption of the devices which draw power from both phases.
 This action decreases the noise interference caused by large power consumption 
 and increases the possibility to disaggregate more devices with low-power consumption. 
 Then we apply piecewise motif mining to single-phase data to separate 
