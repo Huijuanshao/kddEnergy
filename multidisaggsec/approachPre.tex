@@ -1,0 +1,30 @@
+\section{Temporal Data Mining and the Probabilistic Model}
+Temporal datasets display a character of time-dependency. 
+They are recorded frequently in smart buildings 
+and build scenarios to infer the energy usage of people.
+ Temporal data mining revolves around the techniques (algorithms) that enumerate structures, patterns, and signatures over temporal data (time series, for instance). 
+ A survey \cite{laxman2006survey} has investigated several efficient 
+ techniques to discover the patterns in ordered data streams.  
+ The techniques used to discover significant patterns vary according to the dataset. 
+ One of the compelling patterns in temporal data mining is frequent episodes \cite{mannila1997discovery}.
+
+\textbf{Frequent Episode Discovery}
+
+Frequent episode discovery is proposed in \cite{mannila1997discovery}. 
+Given a sequence of events $<(E_1, t_1), ..., (E_n, t_n)>$, 
+where $E_i$ denotes the $i^{th}$ event at the time of $t_i$, 
+the aim is to find temporal patterns (called \textit{episodes}) that occur 
+frequently in the long sequence. 
+This episode is an ordered event collections. 
+For in-stance an episode $(A\rightarrow B\rightarrow C)$ represents that event type $A$ comes before event type $B$, 
+which occurs before event type $C$. 
+The occurring time of these events are unnecessary to be consequent. 
+The frequency threshold is decided by a user. 
+ Several data mining algorithms have been researched to 
+ discover the frequent episodes \cite{mannila1997discovery, laxman2005discovering}.
+ 
+\textbf{Motif Mining in Multi-variate Time Series Data}
+
+Motif mining is a temporal data mining technique that was initially proposed in ~\cite{motif1} and \cite{motif2} and extensively studied in \cite{minnen2007improving, tanaka2005discovery, motifgoal}. The fundamental idea behind \emph{motif mining} is that it symbolically encodes the numerical time series data. After this encoding, the symbols combine to form episodes in the data, resulting in patterns that can be mined. Furthermore, by combining domain-specific information and pattern mining techniques, we extract frequent,  meaningful episodes from the symbolized time series.
+
+Furthermore, when there are time series that describe the data, we employ \emph{multi-variate motif mining} to find meaningful patterns. The algorithms for multi-variate temporal motif mining are similar to the univariate case, except that the symbolic encoding is represented as a vector. Therefore each time point in the data is represented as a vector of symbols, with each symbol corresponding to one of the several time series that represents the data. Now, the combination of these vector symbols forms episodes that can be mined from the multi-variate time series data. Again, by combining domain specific knowledge, we extract meaningful episodes from the data.
