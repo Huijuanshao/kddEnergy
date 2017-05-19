@@ -62,19 +62,17 @@
 
 
 \begin{abstract}
-With the advent of modern sensor technologies, 
-significant opportunities have opened up to help conserve energy in 
-residential and commercial buildings. Moreover, the rapid \emph{urbanization} we are witnessing requires optimized energy distribution. 
-This paper focuses on two one problem in improving energy conservation; \emph{energy disaggregation}. 
-Energy disaggregation attempts to 
-separate the energy usage 
-of each circuit or each electric device in a building 
-using only aggregate electricity usage information from 
-the meter for the whole house. 
-We cast this problem as \emph{temporal mining problems}. We exploit motif mining with constraints to distinguish devices with multiple states, which helps tackle the energy disaggregation problem. Our
-results reveal that motif mining is adept at distinguishing
-devices with multiple power levels and at disentangling the
-combinatorial operation of devices.
+Non-intrusive load monitoring (energy disaggregation) has emerged as a hot research topic 
+to provide insight into conserve energy in buildings. 
+It aims to discover electricity usage patterns of each device 
+with the only knowledge of the total power consumption in each phase at the entry. 
+In this paper, we utilize a recursive multivariate piecewise motif mining approach
+to disaggregate the major power consumption devices from 2 phases or 3 phases. 
+Our results show that, comparing to disaggregating devices from the sum of 
+both or all phases, 
+this model can separate more devices 
+when facing same power issues, continuously variable loads, 
+and low-power consumption devices. 
 \end{abstract}
 
 %
